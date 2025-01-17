@@ -83,17 +83,17 @@ function App() {
   // 커밋 테스트
   // 다시 수정...
   return (
-    <Router>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
-        <Route path={`${process.env.PUBLIC_URL}/movie`} element={<Detail />} />
-        <Route path={`${process.env.PUBLIC_URL}/movie/:id`} element={<Detail />} />
-        <Route path={`${process.env.PUBLIC_URL}/hello`} element={
+        <Route path="/" element={<Home />} />
+        <Route path="/movie" element={<Detail />} />
+        <Route path="/movie/:id" element={<Detail />} />
+        <Route path="/hello" element={
             <h1>Say Hello~~~</h1>
           }
         />
       </Routes>
-    </Router>
+    </BrowserRouter>
   )
 }
 

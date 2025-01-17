@@ -11,7 +11,7 @@ function Movie(props) {
                 <Link to={`${process.env.PUBLIC_URL}/movie`}>{props.title}</Link>
             </h3> */}
             <h2>
-                <Link to={`${process.env.PUBLIC_URL}/movie/${props.id}`}>{props.title}</Link>
+                <Link to={`/movie/${props.id}`}>{props.title}</Link>
             </h2>
             <p>{props.summary}</p>
             <ul>
