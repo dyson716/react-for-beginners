@@ -80,7 +80,6 @@ function App() {
 
   */
 
-  // 주석 하나 추가해봄
   return (
     <Router>
       <Routes>
