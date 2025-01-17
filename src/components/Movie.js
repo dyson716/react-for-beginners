@@ -7,9 +7,9 @@ function Movie(props) {
         // <li key={movie.id}>{movie.title}</li>
         <div key={props.id}>
             <img src={props.coverImg}/>
-            <h3>
+            {/* <h3>
                 <Link to={`${process.env.PUBLIC_URL}/movie`}>{props.title}</Link>
-            </h3>
+            </h3> */}
             <h2>
                 <Link to={`${process.env.PUBLIC_URL}/movie/${props.id}`}>{props.title}</Link>
             </h2>
