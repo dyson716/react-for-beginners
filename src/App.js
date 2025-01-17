@@ -1,5 +1,5 @@
 import Button from "./Button";
-import styles from "./App.module.css";
+import styles from "./App.module.css"; 
 
 import Home from "./routes/Home";
 
@@ -83,7 +83,7 @@ function App() {
   // 커밋 테스트
   // 다시 수정...
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movie" element={<Detail />} />
@@ -93,7 +93,7 @@ function App() {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </Router>
   )
 }
 
