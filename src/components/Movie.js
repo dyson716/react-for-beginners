@@ -8,10 +8,10 @@ function Movie(props) {
         <div key={props.id}>
             <img src={props.coverImg}/>
             <h3>
-                <Link to="/movie">{props.title}</Link>
+                <Link to={`${process.env.PUBLIC_URL}/movie`}>{props.title}</Link>
             </h3>
             <h2>
-                <Link to={`/movie/${props.id}`}>{props.title}</Link>
+                <Link to={`${process.env.PUBLIC_URL}/movie/${props.id}`}>{props.title}</Link>
             </h2>
             <p>{props.summary}</p>
             <ul>
