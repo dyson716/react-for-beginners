@@ -86,9 +86,9 @@ function App() {
     <Router>
       <Routes>
         <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
-        <Route path="/movie" element={<Detail />} />
-        <Route path="/movie/:id" element={<Detail />} />
-        <Route path="/hello" element={
+        <Route path={`${process.env.PUBLIC_URL}/movie`} element={<Detail />} />
+        <Route path={`${process.env.PUBLIC_URL}/movie/:id`} element={<Detail />} />
+        <Route path={`${process.env.PUBLIC_URL}/hello`} element={
             <h1>Say Hello~~~</h1>
           }
         />
