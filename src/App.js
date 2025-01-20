@@ -80,7 +80,7 @@ function App() {
 
   */
 
-  // Git Pages를 위한 base경로 설정
+  // Git Pages를 위한 base경로 설정..
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
