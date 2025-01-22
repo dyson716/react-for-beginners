@@ -1,10 +1,2 @@
 /* Global Style CSS */
 
-@font-face {
-    font-family: 'SoupFont';
-    src: url('./fonts/soup_1.0ver.ttf') format('truetype');
-}
-
-html, body, * {
-    font-family: 'SoupFont', sans-serif;
-}
